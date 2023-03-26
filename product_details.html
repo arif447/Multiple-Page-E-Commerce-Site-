@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce site</title>
+    <!--bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="left-nav">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="right-nav">
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">My Account</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="#">SignUp</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">USD</a>
+                <div class="dropdown-menu" id="usd">
+                    <a class="dropdown-item" href="#">ABC</a>
+                    <a class="dropdown-item" href="#">BCD</a>
+                    <a class="dropdown-item" href="#">HHH</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">EN</a>
+                <div class="dropdown-menu" id="en">
+                    <a class="dropdown-item" href="#">FR</a>
+                    <a class="dropdown-item" href="#">AR</a>
+                    <a class="dropdown-item" href="#">UR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end top navbar -->
+    <!-- start middle navbar -->
+    <div class="container">
+        <div class="middle-nav d-flex align-items-center justify-content-between flex-wrap">
+            <div class="logo">
+                <a href="index.html"><img src="img/qcoom.jfif" alt=""></a>
+            </div>
+            <div class="searchbar-middle">
+                <form action="">
+                    <div class="input-value mt-4">
+                        <input type="text" name="" id="" placeholder="Search for Products">
+                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                    </div>
+                </form>
+            </div>
+            <div class=" d-flex me-3">
+                <a href="" id="nav-icon"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                <a href="cart.html" id="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="" id="nav-icon"><i class="fa-sharp fa-solid fa-shop"></i></a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- end middle nav -->
+    <!-- start navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" style="background-color: #193153;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="category dropdown ms-5">
+                    <h3 class="category-element" data-bs-toggle="dropdown"><a href="#">Category</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </h3>
+                    <div class="dropdown-menu" style="width: 400px;" id="category-menu">
+                        <a href="" class="nav-item nav-link">Shirts</a>
+                        <a href="" class="nav-item nav-link">Jeans</a>
+                        <a href="" class="nav-item nav-link">Swimwear</a>
+                        <a href="" class="nav-item nav-link">Sleepwear</a>
+                        <a href="" class="nav-item nav-link">Sportswear</a>
+                        <a href="" class="nav-item nav-link">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link">Blazers</a>
+                        <a href="" class="nav-item nav-link">Jackets</a>
+                        <a href="" class="nav-item nav-link">Shoes</a>
+
+                    </div>
+
+                </div>
+                <ul class="navbar-nav  text-center" id="nav-item">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product_details.html">Product-details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Premium Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <!-- product details -->
+    <div class="product-details " style="background-color: #ccc;">
+        <div class="container py-3">
+            <div class="row pt-3">
+                <div class="col-lg-4 col-md-6 col-12 bg-white ">
+                    <div class="product-details-slider">
+                        <div class="product-slides">
+                            <img src="img/product-1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-slides">
+                            <img src="img/product-3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-slides">
+                            <img src="img/product-2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <!-- Next and previous buttons  -->
+                        <a class="prev-btn" onclick="product_changes(-1)">&#10094;</a>
+                        <a class="next-btn" onclick="product_changes(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 bg-white" id="content-body">
+                    <h6 class="fs-1 fw-bold mt-5">Product Name Goes</h6>
+                    <small class="text-body mb-3 fs-3 fw-bold">$100</small>
+                    <p class="star-icon mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus unde culpa
+                        excepturi, inventore est quos.
+                    </p>
+                    <!-- size -->
+                    <div class="size d-flex text-center fs-4 ">
+                        <h3 class="fs-4 fw-bold me-3">Sizes:</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label me-3" for="flexRadioDefault1">
+                                XXL
+                            </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label me-3" for="flexRadioDefault2">
+                                XL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label me-3" for="flexRadioDefault1">
+                                S
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label me-3" for="flexRadioDefault2">
+                                M
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                XM
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- <div class="select-choice">
+                <label for="cars" class="me-3 fs-3">Choose a Size:</label>
+                <select name="size" id="size" style="width: 100px; height: 30px;">
+                  <option value="volvo" >M</option>
+                  <option value="saab">X</option>
+                  <option value="opel">XXL</option>
+                  <option value="audi">ML</option>
+                </select>
+            </div> -->
+
+                    <!-- color -->
+                    <div class="color d-flex text-center fs-4 ">
+                        <h3 class="fs-4 fw-bold me-3">Colors:</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label me-3" for="flexRadioDefault1">
+                                Black
+                            </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label me-3" for="flexRadioDefault2">
+                                White
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label me-3" for="flexRadioDefault1">
+                                Red
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label me-3" for="flexRadioDefault2">
+                                Gray
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Yello
+                            </label>
+                        </div>
+                    </div>
+                    <!-- cart and increase -->
+                    <div class="increase pt-3">
+                        <div class="increment" style="width: 200px;">
+                            <button class="minus btn-warning">-</button>
+                            <button class="num btn-white">01</button>
+                            <button class="plus btn-warning">+</button>
+                        </div>
+                    </div>
+                    <!-- share on -->
+                    <div class="color d-flex text-center fs-4 py-3 ">
+                        <h3 class="fs-4 fw-bold me-3">Share oN:</h3>
+                        <a href="#" class="btn btn-warning btn-square me-2"><i
+                                class="fa-brands fa-square-facebook text-black fs-5"></i></a>
+                        <a href="#" class="btn btn-warning btn-square me-2"><i
+                                class="fa-brands fa-linkedin text-black  fs-5"></i></a>
+                        <a href="#" class="btn btn-warning btn-square me-2"><i
+                                class="fa-brands fa-twitter text-black fs-5"></i></a>
+                        <a href="#" class="btn btn-warning btn-square me-2"><i
+                                class="fa-brands fa-youtube  text-black fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- description -->
+    <div class="discription" style="background-color: #ccc;">
+        <div class="container  py-3">
+            <div class="row bg-white ">
+                <div class="col-lg-6 col-md-12 col-12" id="details">
+                    <h4>Details</h4>
+                    <hr>
+                    <p class="mt-2 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        recusandae, nulla minima perspiciatis architecto repudiandae. Laboriosam magnam quia voluptate
+                        omnis quas perspiciatis pariatur cum, quae ducimus voluptatem, dignissimos tempora, saepe
+                        aperiam. Molestias amet magnam nesciunt quasi, soluta beatae corporis molestiae atque odit.
+                        Dolor odit, tempora doloremque soluta nihil illum quae ad, quidem quaerat optio molestiae
+                        dolores quas minima fuga quam ipsum distinctio sint iusto reprehenderit eos. Sed veniam soluta
+                        necessitatibus! Pariatur aperiam, temporibus quos fugit doloremque soluta eaque? Ipsum pariatur
+                        quas expedita, corporis id excepturi nihil maiores perferendis a ducimus debitis fugit. Odit
+                        pariatur deleniti quod esse dolorem, delectus quasi.
+                    </p>
+                    <p class="mt-2 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        recusandae, nulla minima perspiciatis architecto repudiandae. Laboriosam magnam quia voluptate
+                        omnis quas perspiciatis pariatur cum, quae ducimus voluptatem, dignissimos tempora, saepe
+                        aperiam. Molestias amet magnam nesciunt quasi, soluta beatae corporis molestiae atque odit.
+                        Dolor odit, tempora doloremque soluta nihil illum quae ad, quidem quaerat optio molestiae
+                        dolores quas minima fuga quam ipsum distinctio sint iusto reprehenderit eos. Sed veniam soluta
+                        necessitatibus! Pariatur aperiam, temporibus quos fugit doloremque soluta eaque? Ipsum pariatur
+                        quas expedita, corporis id excepturi nihil maiores perferendis a ducimus debitis fugit. Odit
+                        pariatur deleniti quod esse dolorem, delectus quasi.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12" id="delivery-content">
+                    <h4>Delivery Process</h4>
+                    <hr>
+                    <div class="delivery fs-5 ">
+                        <li>ঢাকা সিটির মধ্যে ডেলিভারি চার্জ ফ্রি</li>
+                        <li>ঢাকা সিটির বাইরে ডেলিভারি চার্জ 100 টাকা।</li>
+                        <li>১০০০ টাকা বা ১০০০ টাকা এর বেশি প্রোডাক্ট ক্রয় করলে ডেলিভারী চার্জ ফ্রি।</li>
+                        <li>ঢাকা সিটির মধ্যে ডেলিভারি চার্জ ফ্রি</li>
+                    </div>
+                    <div class="delivery-count fs-5 ">
+                        <li>আপনার অর্ডার কনফার্ম করার পরের দিন হতে </li>
+                        <li>ডেলিভারির সময় / দিন হিসাব করা হবে ।</li>
+                        <li>*ঢাকার ভিতর (৪৮ ঘন্টা / ২ দিন), আর ঢাকার বাহিরে</li>
+                        <li>সর্বোচ্চ (৯৬ ঘন্টা / ৪ দিন ) এর মধ্যে ডেলিভারী দেওয়া হয়।</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- related product -->
+    <div class="related-product" style="background-color: #ccc;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <h2 class="title-name">Related Products</h2>
+                </div>
+            </div>
+            <!-- products -->
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-1.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-2.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-3.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-4.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-6.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-7.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-8.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <a href="#" class=" text-decoration-none">
+                        <div class="product-cart">
+                            <div class="product-img overflow-hidden">
+                                <img src="img/product-9.jpg" alt="" class="img-fluid">
+                                <p class="popup-icon test">
+                                    <a href="#"><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href=""><i class="fa-sharp fa-regular fa-heart"></i></a>
+                                </p>
+                            </div>
+                            <div class="product-content mt-3 pb-3">
+                                <h6>Product Name Goes</h6>
+                                <small class="text-body">$100</small>
+                                <p class="star-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-5 bg-dark ">
+        <div class="row pt-3 ms-5 me-3 fs-5">
+            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                <h3 class="mb-3 text-white text-uppercase">GET IN TOUCH</h3>
+                <p class="mb-4 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui culpa,
+                    recusandae repellendus tempore inventore id quia a, enim odio est laudantium doloremque veniam
+                    aliquam autem repellat facilis deserunt iste dolorem.</p>
+                <div class="footer-element">
+                    <p class="text-white"><i class="fa-solid fa-location-dot me-4 text-warning fs-5"></i>123 Street, New
+                        York, USA</p>
+                    <p class="text-white"><i class="fa-solid fa-phone me-4 text-warning fs-5"></i> 0190XXXXXX</p>
+                    <p class="text-white"><i class="fa-solid fa-envelope me-4 text-warning fs-5"></i> info@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                <h3 class="mb-3 text-white text-uppercase">QUICK SHOP</h3>
+                <div class="footer-element d-flex flex-column">
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Home</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Our Shop</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Shop Details</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>CheckOut</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Cart</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                <h3 class="mb-3 text-white text-uppercase">Service</h3>
+                <div class="footer-element d-flex flex-column">
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>About</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Contact</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Free Shipping</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Return Policy</a>
+                    <a href="#" class="mb-2 text-white text-decoration-none"><i
+                            class="fa-solid fa-angles-right me-2"></i>Delevery</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-5">
+                <h3 class="mb-3 text-white text-uppercase">NEWSLETTER</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui culpa, recusandae
+                    repellendus tempore inventore id quia a, enim odio est laudantium doloremque veniam aliquam autem
+                    repellat facilis deserunt iste dolorem.</p>
+                <form action="">
+                    <div class="fotter-login">
+                        <input type="text" placeholder="Email">
+                        <button class="sub-btn">Submit</button>
+                    </div>
+                </form>
+                <h3 class="mb-3 text-white text-uppercase mb-4 mt-4">Follow US</h3>
+                <a href="#" class="btn btn-warning btn-square"><i
+                        class="fa-brands fa-square-facebook text-black fs-5"></i></a>
+                <a href="#" class="btn btn-warning btn-square"><i
+                        class="fa-brands fa-linkedin text-black  fs-5"></i></a>
+                <a href="#" class="btn btn-warning btn-square"><i class="fa-brands fa-twitter text-black fs-5"></i></a>
+                <a href="#" class="btn btn-warning btn-square"><i class="fa-brands fa-youtube  text-black fs-5"></i></a>
+            </div>
+        </div>
+        <hr class="text-white">
+        <p class="text-white ms-5 m-auto text-center">© Domain. All Rights Reserved. Designed by HTML Codex</p>
+    </footer>
+    <script>
+
+
+        // product details 
+
+        let product_index = 0;
+        productshow(product_index);
+
+        function product_changes(value) {
+            product_index += value;
+            productshow(product_index);
+        }
+
+        function productshow(value) {
+            let products = document.getElementsByClassName('product-slides');
+            if (value == products.length) {
+                value = 0;
+                product_index = 0;
+            }
+            if (value < 0) {
+                product_index = products.length - 1;
+                value = products.length - 1;
+            }
+            for (let i = 0; i < products.length; i++) {
+                products[i].style.display = 'none';
+            }
+            products[value].style.display = 'block';
+
+        }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
